@@ -1,0 +1,8 @@
+var calculateSalary = function (blackPay) {
+  var taxes = 0.35;
+  if (blackPay >= 100000) {
+    taxes = 0.45;
+  }
+  var whitePay = blackPay - blackPay * taxes;
+  return whitePay;
+};
